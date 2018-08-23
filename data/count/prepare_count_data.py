@@ -3,7 +3,7 @@ import os.path as osp
 import re
 import random
 
-devkit_dir = './count/data/count/count/'
+devkit_dir = './count/'
 
 
 def get_dir(devkit_dir, type):
@@ -75,4 +75,4 @@ def prepare_filelist(devkit_dir, output_dir):
         for file_name in file_names:
             f.write(file_name + '\n')
 
-prepare_filelist(devkit_dir, './count/data/count/')
+prepare_filelist(devkit_dir, './data/count/')
