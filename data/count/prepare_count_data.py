@@ -75,4 +75,4 @@ def prepare_filelist(devkit_dir, output_dir):
         for file_name in file_names:
             f.write(file_name + '\n')
 
-prepare_filelist(devkit_dir, '.')
+prepare_filelist(devkit_dir, './count/data/count/')
