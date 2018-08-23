@@ -3,7 +3,7 @@ import os.path as osp
 import re
 import random
 
-devkit_dir = './count/data/count/count/s'
+devkit_dir = './count/data/count/count/'
 
 
 def get_dir(devkit_dir, type):
