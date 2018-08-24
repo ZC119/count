@@ -3,7 +3,7 @@ import os.path as osp
 import re
 import random
 
-devkit_dir = './count/'
+devkit_dir = 'data/count/count/'
 
 
 def get_dir(devkit_dir, type):
@@ -38,9 +38,9 @@ def walk_dir(devkit_dir):
         assert os.path.isfile(img_path), 'file %s not found.' % img_path
         
         if i < test_num:
-            test_list.append([img_path, ann_path])
+            test_list.append([img_path[11:], ann_path[11:]])
         else:
-            trainval_list.append([img_path, ann_path])
+            trainval_list.append([img_path[11:], ann_path[11:]])
         i += 1
     return trainval_list, test_list
 
