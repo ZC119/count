@@ -130,6 +130,9 @@ if __name__ == '__main__':
         raise ValueError("The model path [%s] does not exist." %
                          (args.model_dir))
 
+    with open('result.csv', 'a') as f:
+        f.write('id,predicted\n')
+
     data_args = reader.Settings(
         dataset=args.dataset,
         data_dir=data_dir,
